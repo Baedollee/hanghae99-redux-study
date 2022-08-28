@@ -13,7 +13,7 @@ export const postsSlice = createSlice({
   initialState,
   reducers: {
     addTodo: (state, action) => {
-      console.log(action);
+      state.posts = [...state.posts, action.payload];
     },
   },
 });
